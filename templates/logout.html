@@ -1,0 +1,11 @@
+{% extends 'master.html' %}
+{% block content %}
+    <h1 class="text-info text-center">You have logged out!</h1>
+    <div class="text-center">
+        <button class="border-success">
+            <a href="{% url 'login-url' %}">login again</a>
+        </button>
+
+    </div>
+
+{% endblock %}

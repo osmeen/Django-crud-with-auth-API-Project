@@ -1,0 +1,22 @@
+{% extends 'master.html' %}
+{% block content %}
+    <h1 class="text-info text-center">Add Product</h1>
+    <form class="row mx-auto col-10 col-md-8 col-lg-6 d-flex flex-column" method="post" action="{% url 'add-product-url' %}">
+        {% csrf_token %}
+        <label>
+            <input class="form-control" required placeholder="product name" type="text" name="p-name">
+        </label>
+        <label>
+            <input class="form-control" required placeholder="product quantity" type="text" name="p-quantity">
+        </label>
+        <label>
+            <input class="form-control" required placeholder="product price" type="text" name="p-price">
+        </label>
+        <label>
+            <input class="form-control" required placeholder="product desc" type="text" name="p-desc">
+        </label>
+        <label>
+            <input class="form-control btn-outline-info" type="submit" value="Save">
+        </label>
+    </form>
+{% endblock %}

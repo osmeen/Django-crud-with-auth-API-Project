@@ -1,0 +1,16 @@
+.my-pic1{
+    width: 32%;
+    height: 210px;
+}
+.my-pic{
+    width: 32%;
+    height: 208px;
+}
+.x{
+    height: 35vh;
+}
+.carousel-inner img{
+    width: 100%;
+    height: 100vh;
+    margin: 5px;
+}
